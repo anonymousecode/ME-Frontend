@@ -1,6 +1,5 @@
 import styles from "./EventsPage.module.css";
 import React from "react";
-import Sidebar from "../../Components/Sidebar/Sidebar";
 import EventCard from "../../Components/EventCard/EventCard";
 import { Event } from "../../types/Event";
 
@@ -41,9 +40,11 @@ const events: Event[] = [
 const EventsPage: React.FC = () => {
   return (
     <div className={styles.container}>
+      
       <div className={styles.content}>
-          <h2>Events</h2>
+          
           <div className={styles.filterSort}>
+          <h2>Events</h2>
             <button>Filter</button>
             <button>Sort</button>
           </div>

@@ -9,7 +9,6 @@
 
 .content {
   flex: 1;
-  padding: 20px;
   position: relative;
   margin-left: 180px;
   transition: margin-left 0.3s ease-in-out;
@@ -17,9 +16,8 @@
 
 
 h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  position:absolute;
+  font-size: 30px;
+  margin-left: 30px;
   top:40px;
   left:40px;
 }

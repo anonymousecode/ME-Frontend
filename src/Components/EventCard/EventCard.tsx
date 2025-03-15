@@ -10,7 +10,7 @@ const EventCard: React.FC<Props> = ({ event }) => {
   return (
     <div className={styles.card}>
       <img className={styles.eventImage} src={event.image} alt={event.title} />
-      <h3 className={styles.title}>{event.title}</h3>
+      <h3 >{event.title}</h3>
       <p className={styles.description}>{event.description}</p>
       <p><strong>Date:</strong> {event.date}</p>
       <p><strong>Time:</strong> {event.time}</p>

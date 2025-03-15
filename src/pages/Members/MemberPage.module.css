@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color:white;
+    width:100vw;
+    height:100vw;
+  
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    margin-left: 180px;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    position:absolute;
+    top:40px;
+    color: black;
+    left:40px;
+  }
+  
+  
+  .filterSort {
+    position: sticky;  /* ✅ Sticky for fixed positioning */
+    top: 0;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end; /* ✅ Aligns buttons to the right */
+    background-color: white;  /* Matches page background */
+    padding: 10px 20px; /* Added padding for spacing */
+    z-index: 10; /* Ensures buttons stay above content */
+    border-bottom: 2px solid #ddd; /* Visual separation */
+  }
+  
+  
+  .filterSort button {
+    background-color:#b58325; 
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+  }
+  
+  .filterSort button:hover {
+    background-color:#b58325; 
+  }
+  
+  .membersContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Adds spacing between cards */
+    margin-top: 60px;
+}
+  
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      margin-left: 60px; 
+    }
+    .filterSort {
+      top:-160px;
+      right:40px;
+    }
+    
+    h2 {
+      top:-120px;
+      left: 40px;
+    }
+  
+    .eventsContainer {
+      margin-top: -80px ;
+      
+    }
+  }
+  
