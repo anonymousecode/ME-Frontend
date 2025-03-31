@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./MemberPage.module.css";
 import MemberCard from "../../Components/MemberCard/MemberCard";
-import { Member } from "../../types/Member";
+// import { Member } from "../../types/member";
+
+import { Member } from "../../types/Member"; // Try absolute import
 
 const members: Member[] = [
   {
