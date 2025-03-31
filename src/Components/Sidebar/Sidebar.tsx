@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
-import { FaTachometerAlt, FaRegSmile, FaCalendarAlt, FaUser, FaPen, FaSignOutAlt } from "react-icons/fa";
+import { FaTachometerAlt } from "react-icons/fa"; // Corrected package structure
+import { FaRegSmile, FaCalendarAlt, FaUser, FaPen, FaSignOutAlt } from "react-icons/fa";
+
 
 interface SidebarProps {
   onSelect: (component: string) => void;
